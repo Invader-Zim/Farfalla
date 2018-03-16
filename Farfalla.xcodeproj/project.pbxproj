@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC0F5772205B1A1E00C3B786 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F5771205B1A1E00C3B786 /* SearchResults.swift */; };
+		DC0F5774205B39AC00C3B786 /* AppleSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F5773205B39AC00C3B786 /* AppleSearch.swift */; };
+		DC0F5776205B3F2E00C3B786 /* AppleSearchMediaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F5775205B3F2E00C3B786 /* AppleSearchMediaTypes.swift */; };
+		DC9CC4B5205B091000E10CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CC4B4205B091000E10CF1 /* AppDelegate.swift */; };
+		DC9CC4B7205B091000E10CF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CC4B6205B091000E10CF1 /* ViewController.swift */; };
+		DC9CC4BA205B091000E10CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9CC4B8205B091000E10CF1 /* Main.storyboard */; };
+		DC9CC4BC205B091000E10CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9CC4BB205B091000E10CF1 /* Assets.xcassets */; };
+		DC9CC4BF205B091000E10CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9CC4BD205B091000E10CF1 /* LaunchScreen.storyboard */; };
+		DC9CC4CA205B091000E10CF1 /* FarfallaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CC4C9205B091000E10CF1 /* FarfallaTests.swift */; };
+		DC9CC4D5205B091000E10CF1 /* FarfallaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CC4D4205B091000E10CF1 /* FarfallaUITests.swift */; };
+		DC9CC4E7205B0F5F00E10CF1 /* ResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CC4E6205B0F5F00E10CF1 /* ResultItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC9CC4C6205B091000E10CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC9CC4A9205B091000E10CF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC9CC4B0205B091000E10CF1;
+			remoteInfo = Farfalla;
+		};
+		DC9CC4D1205B091000E10CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC9CC4A9205B091000E10CF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC9CC4B0205B091000E10CF1;
+			remoteInfo = Farfalla;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC0F5771205B1A1E00C3B786 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		DC0F5773205B39AC00C3B786 /* AppleSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSearch.swift; sourceTree = "<group>"; };
+		DC0F5775205B3F2E00C3B786 /* AppleSearchMediaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSearchMediaTypes.swift; sourceTree = "<group>"; };
+		DC9CC4B1205B091000E10CF1 /* Farfalla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farfalla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9CC4B4205B091000E10CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC9CC4B6205B091000E10CF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC9CC4B9205B091000E10CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC9CC4BB205B091000E10CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC9CC4BE205B091000E10CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC9CC4C0205B091000E10CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9CC4C5205B091000E10CF1 /* FarfallaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarfallaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9CC4C9205B091000E10CF1 /* FarfallaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarfallaTests.swift; sourceTree = "<group>"; };
+		DC9CC4CB205B091000E10CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9CC4D0205B091000E10CF1 /* FarfallaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarfallaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9CC4D4205B091000E10CF1 /* FarfallaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarfallaUITests.swift; sourceTree = "<group>"; };
+		DC9CC4D6205B091000E10CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9CC4E6205B0F5F00E10CF1 /* ResultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC9CC4AE205B091000E10CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9CC4C2205B091000E10CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9CC4CD205B091000E10CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC9CC4A8205B091000E10CF1 = {
+			isa = PBXGroup;
+			children = (
+				DC9CC4B3205B091000E10CF1 /* Farfalla */,
+				DC9CC4C8205B091000E10CF1 /* FarfallaTests */,
+				DC9CC4D3205B091000E10CF1 /* FarfallaUITests */,
+				DC9CC4B2205B091000E10CF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC9CC4B2205B091000E10CF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CC4B1205B091000E10CF1 /* Farfalla.app */,
+				DC9CC4C5205B091000E10CF1 /* FarfallaTests.xctest */,
+				DC9CC4D0205B091000E10CF1 /* FarfallaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC9CC4B3205B091000E10CF1 /* Farfalla */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CC4E3205B0E6A00E10CF1 /* Model */,
+				DC9CC4E2205B092700E10CF1 /* Services */,
+				DC9CC4B4205B091000E10CF1 /* AppDelegate.swift */,
+				DC9CC4B6205B091000E10CF1 /* ViewController.swift */,
+				DC9CC4B8205B091000E10CF1 /* Main.storyboard */,
+				DC9CC4BB205B091000E10CF1 /* Assets.xcassets */,
+				DC9CC4BD205B091000E10CF1 /* LaunchScreen.storyboard */,
+				DC9CC4C0205B091000E10CF1 /* Info.plist */,
+			);
+			path = Farfalla;
+			sourceTree = "<group>";
+		};
+		DC9CC4C8205B091000E10CF1 /* FarfallaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CC4C9205B091000E10CF1 /* FarfallaTests.swift */,
+				DC9CC4CB205B091000E10CF1 /* Info.plist */,
+			);
+			path = FarfallaTests;
+			sourceTree = "<group>";
+		};
+		DC9CC4D3205B091000E10CF1 /* FarfallaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CC4D4205B091000E10CF1 /* FarfallaUITests.swift */,
+				DC9CC4D6205B091000E10CF1 /* Info.plist */,
+			);
+			path = FarfallaUITests;
+			sourceTree = "<group>";
+		};
+		DC9CC4E2205B092700E10CF1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC0F5773205B39AC00C3B786 /* AppleSearch.swift */,
+				DC0F5775205B3F2E00C3B786 /* AppleSearchMediaTypes.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DC9CC4E3205B0E6A00E10CF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CC4E6205B0F5F00E10CF1 /* ResultItem.swift */,
+				DC0F5771205B1A1E00C3B786 /* SearchResults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC9CC4B0205B091000E10CF1 /* Farfalla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9CC4D9205B091000E10CF1 /* Build configuration list for PBXNativeTarget "Farfalla" */;
+			buildPhases = (
+				DC9CC4AD205B091000E10CF1 /* Sources */,
+				DC9CC4AE205B091000E10CF1 /* Frameworks */,
+				DC9CC4AF205B091000E10CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Farfalla;
+			productName = Farfalla;
+			productReference = DC9CC4B1205B091000E10CF1 /* Farfalla.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC9CC4C4205B091000E10CF1 /* FarfallaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9CC4DC205B091000E10CF1 /* Build configuration list for PBXNativeTarget "FarfallaTests" */;
+			buildPhases = (
+				DC9CC4C1205B091000E10CF1 /* Sources */,
+				DC9CC4C2205B091000E10CF1 /* Frameworks */,
+				DC9CC4C3205B091000E10CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC9CC4C7205B091000E10CF1 /* PBXTargetDependency */,
+			);
+			name = FarfallaTests;
+			productName = FarfallaTests;
+			productReference = DC9CC4C5205B091000E10CF1 /* FarfallaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC9CC4CF205B091000E10CF1 /* FarfallaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9CC4DF205B091000E10CF1 /* Build configuration list for PBXNativeTarget "FarfallaUITests" */;
+			buildPhases = (
+				DC9CC4CC205B091000E10CF1 /* Sources */,
+				DC9CC4CD205B091000E10CF1 /* Frameworks */,
+				DC9CC4CE205B091000E10CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC9CC4D2205B091000E10CF1 /* PBXTargetDependency */,
+			);
+			name = FarfallaUITests;
+			productName = FarfallaUITests;
+			productReference = DC9CC4D0205B091000E10CF1 /* FarfallaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC9CC4A9205B091000E10CF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = SR;
+				TargetAttributes = {
+					DC9CC4B0205B091000E10CF1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DC9CC4C4205B091000E10CF1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC9CC4B0205B091000E10CF1;
+					};
+					DC9CC4CF205B091000E10CF1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC9CC4B0205B091000E10CF1;
+					};
+				};
+			};
+			buildConfigurationList = DC9CC4AC205B091000E10CF1 /* Build configuration list for PBXProject "Farfalla" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC9CC4A8205B091000E10CF1;
+			productRefGroup = DC9CC4B2205B091000E10CF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC9CC4B0205B091000E10CF1 /* Farfalla */,
+				DC9CC4C4205B091000E10CF1 /* FarfallaTests */,
+				DC9CC4CF205B091000E10CF1 /* FarfallaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC9CC4AF205B091000E10CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9CC4BF205B091000E10CF1 /* LaunchScreen.storyboard in Resources */,
+				DC9CC4BC205B091000E10CF1 /* Assets.xcassets in Resources */,
+				DC9CC4BA205B091000E10CF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9CC4C3205B091000E10CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9CC4CE205B091000E10CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC9CC4AD205B091000E10CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0F5774205B39AC00C3B786 /* AppleSearch.swift in Sources */,
+				DC9CC4B7205B091000E10CF1 /* ViewController.swift in Sources */,
+				DC9CC4E7205B0F5F00E10CF1 /* ResultItem.swift in Sources */,
+				DC0F5776205B3F2E00C3B786 /* AppleSearchMediaTypes.swift in Sources */,
+				DC0F5772205B1A1E00C3B786 /* SearchResults.swift in Sources */,
+				DC9CC4B5205B091000E10CF1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9CC4C1205B091000E10CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9CC4CA205B091000E10CF1 /* FarfallaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9CC4CC205B091000E10CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9CC4D5205B091000E10CF1 /* FarfallaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC9CC4C7205B091000E10CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC9CC4B0205B091000E10CF1 /* Farfalla */;
+			targetProxy = DC9CC4C6205B091000E10CF1 /* PBXContainerItemProxy */;
+		};
+		DC9CC4D2205B091000E10CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC9CC4B0205B091000E10CF1 /* Farfalla */;
+			targetProxy = DC9CC4D1205B091000E10CF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC9CC4B8205B091000E10CF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9CC4B9205B091000E10CF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC9CC4BD205B091000E10CF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9CC4BE205B091000E10CF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC9CC4D7205B091000E10CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC9CC4D8205B091000E10CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC9CC4DA205B091000E10CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C762PW7C5;
+				INFOPLIST_FILE = Farfalla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakonza.Farfalla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC9CC4DB205B091000E10CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C762PW7C5;
+				INFOPLIST_FILE = Farfalla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakonza.Farfalla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC9CC4DD205B091000E10CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C762PW7C5;
+				INFOPLIST_FILE = FarfallaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakonza.FarfallaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Farfalla.app/Farfalla";
+			};
+			name = Debug;
+		};
+		DC9CC4DE205B091000E10CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C762PW7C5;
+				INFOPLIST_FILE = FarfallaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakonza.FarfallaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Farfalla.app/Farfalla";
+			};
+			name = Release;
+		};
+		DC9CC4E0205B091000E10CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C762PW7C5;
+				INFOPLIST_FILE = FarfallaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakonza.FarfallaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Farfalla;
+			};
+			name = Debug;
+		};
+		DC9CC4E1205B091000E10CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C762PW7C5;
+				INFOPLIST_FILE = FarfallaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakonza.FarfallaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Farfalla;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC9CC4AC205B091000E10CF1 /* Build configuration list for PBXProject "Farfalla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9CC4D7205B091000E10CF1 /* Debug */,
+				DC9CC4D8205B091000E10CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9CC4D9205B091000E10CF1 /* Build configuration list for PBXNativeTarget "Farfalla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9CC4DA205B091000E10CF1 /* Debug */,
+				DC9CC4DB205B091000E10CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9CC4DC205B091000E10CF1 /* Build configuration list for PBXNativeTarget "FarfallaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9CC4DD205B091000E10CF1 /* Debug */,
+				DC9CC4DE205B091000E10CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9CC4DF205B091000E10CF1 /* Build configuration list for PBXNativeTarget "FarfallaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9CC4E0205B091000E10CF1 /* Debug */,
+				DC9CC4E1205B091000E10CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC9CC4A9205B091000E10CF1 /* Project object */;
+}
