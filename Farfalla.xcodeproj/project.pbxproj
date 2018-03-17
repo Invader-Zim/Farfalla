@@ -10,6 +10,7 @@
 		DC0F5772205B1A1E00C3B786 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F5771205B1A1E00C3B786 /* SearchResults.swift */; };
 		DC0F5774205B39AC00C3B786 /* AppleSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F5773205B39AC00C3B786 /* AppleSearch.swift */; };
 		DC0F5776205B3F2E00C3B786 /* AppleSearchMediaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F5775205B3F2E00C3B786 /* AppleSearchMediaTypes.swift */; };
+		DC0F5779205C5D2500C3B786 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F5778205C5D2500C3B786 /* ImageCache.swift */; };
 		DC9CC4B5205B091000E10CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CC4B4205B091000E10CF1 /* AppDelegate.swift */; };
 		DC9CC4B7205B091000E10CF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CC4B6205B091000E10CF1 /* ViewController.swift */; };
 		DC9CC4BA205B091000E10CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9CC4B8205B091000E10CF1 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		DC0F5771205B1A1E00C3B786 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		DC0F5773205B39AC00C3B786 /* AppleSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSearch.swift; sourceTree = "<group>"; };
 		DC0F5775205B3F2E00C3B786 /* AppleSearchMediaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSearchMediaTypes.swift; sourceTree = "<group>"; };
+		DC0F5778205C5D2500C3B786 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		DC9CC4B1205B091000E10CF1 /* Farfalla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farfalla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9CC4B4205B091000E10CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC9CC4B6205B091000E10CF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC0F5777205C4C6E00C3B786 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DC0F5778205C5D2500C3B786 /* ImageCache.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		DC9CC4A8205B091000E10CF1 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 		DC9CC4B3205B091000E10CF1 /* Farfalla */ = {
 			isa = PBXGroup;
 			children = (
+				DC0F5777205C4C6E00C3B786 /* Utility */,
 				DC9CC4E3205B0E6A00E10CF1 /* Model */,
 				DC9CC4E2205B092700E10CF1 /* Services */,
 				DC9CC4B4205B091000E10CF1 /* AppDelegate.swift */,
@@ -292,6 +303,7 @@
 				DC9CC4E7205B0F5F00E10CF1 /* ResultItem.swift in Sources */,
 				DC0F5776205B3F2E00C3B786 /* AppleSearchMediaTypes.swift in Sources */,
 				DC0F5772205B1A1E00C3B786 /* SearchResults.swift in Sources */,
+				DC0F5779205C5D2500C3B786 /* ImageCache.swift in Sources */,
 				DC9CC4B5205B091000E10CF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
