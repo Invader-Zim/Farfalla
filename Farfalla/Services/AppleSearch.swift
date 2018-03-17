@@ -37,17 +37,20 @@ class AppleSearch: NSObject {
     }
     
     func executeJob(withCompletion completion:@escaping (SearchResults?, Error?) -> Void) {
-        let strUrl = String(format: "https://itunes.apple.com/search?parameterkeyvalue&term=%@&media=%@", term, media)
+        let searchTerm = term.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        let strUrl = String(format: "https://itunes.apple.com/search?parameterkeyvalue&term=%@&media=%@", searchTerm!, media)
         let url = NSURL(string: strUrl)
         let session = URLSession.shared
         let task = session.dataTask(with: url! as URL, completionHandler: {data, response, error -> Void in
-            if(error != nil) {
-                // Error in the web request
-                completion( nil, error )
-            }
-            else {
-                let results = SearchResults.init(fromJson: data!)
-                completion( results, nil )
+            DispatchQueue.main.async {
+                if(error != nil) {
+                    // Error in the web request
+                    completion( nil, error )
+                }
+                else {
+                    let results = SearchResults.init(fromJson: data!)
+                    completion( results, nil )
+                }
             }
         })
         task.resume()

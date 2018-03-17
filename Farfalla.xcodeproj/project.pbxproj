@@ -11,6 +11,15 @@
 		DC0F5774205B39AC00C3B786 /* AppleSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F5773205B39AC00C3B786 /* AppleSearch.swift */; };
 		DC0F5776205B3F2E00C3B786 /* AppleSearchMediaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F5775205B3F2E00C3B786 /* AppleSearchMediaTypes.swift */; };
 		DC0F5779205C5D2500C3B786 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F5778205C5D2500C3B786 /* ImageCache.swift */; };
+		DC0F5780205CA7D100C3B786 /* eye_white.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0F577B205CA7D100C3B786 /* eye_white.png */; };
+		DC0F5781205CA7D100C3B786 /* magnifying_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0F577C205CA7D100C3B786 /* magnifying_glass.png */; };
+		DC0F5782205CA7D100C3B786 /* bee-white.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0F577D205CA7D100C3B786 /* bee-white.png */; };
+		DC0F5783205CA7D100C3B786 /* apple_white.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0F577E205CA7D100C3B786 /* apple_white.png */; };
+		DC0F5784205CA7D100C3B786 /* tuning_fork_white.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0F577F205CA7D100C3B786 /* tuning_fork_white.png */; };
+		DC4A5494205D8E2A00092F67 /* SearchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A5493205D8E2A00092F67 /* SearchSettings.swift */; };
+		DC4A549D205D99A600092F67 /* SearchResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A549C205D99A600092F67 /* SearchResultsCell.swift */; };
+		DC4A549F205D9BEB00092F67 /* SearchResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4A549E205D9BEB00092F67 /* SearchResultsCell.xib */; };
+		DC4A54A1205D9D9100092F67 /* MediaTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A54A0205D9D9000092F67 /* MediaTypeViewController.swift */; };
 		DC9CC4B5205B091000E10CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CC4B4205B091000E10CF1 /* AppDelegate.swift */; };
 		DC9CC4B7205B091000E10CF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CC4B6205B091000E10CF1 /* ViewController.swift */; };
 		DC9CC4BA205B091000E10CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9CC4B8205B091000E10CF1 /* Main.storyboard */; };
@@ -43,6 +52,15 @@
 		DC0F5773205B39AC00C3B786 /* AppleSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSearch.swift; sourceTree = "<group>"; };
 		DC0F5775205B3F2E00C3B786 /* AppleSearchMediaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSearchMediaTypes.swift; sourceTree = "<group>"; };
 		DC0F5778205C5D2500C3B786 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		DC0F577B205CA7D100C3B786 /* eye_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye_white.png; sourceTree = "<group>"; };
+		DC0F577C205CA7D100C3B786 /* magnifying_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnifying_glass.png; sourceTree = "<group>"; };
+		DC0F577D205CA7D100C3B786 /* bee-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bee-white.png"; sourceTree = "<group>"; };
+		DC0F577E205CA7D100C3B786 /* apple_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_white.png; sourceTree = "<group>"; };
+		DC0F577F205CA7D100C3B786 /* tuning_fork_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuning_fork_white.png; sourceTree = "<group>"; };
+		DC4A5493205D8E2A00092F67 /* SearchSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSettings.swift; sourceTree = "<group>"; };
+		DC4A549C205D99A600092F67 /* SearchResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsCell.swift; sourceTree = "<group>"; };
+		DC4A549E205D9BEB00092F67 /* SearchResultsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsCell.xib; sourceTree = "<group>"; };
+		DC4A54A0205D9D9000092F67 /* MediaTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeViewController.swift; sourceTree = "<group>"; };
 		DC9CC4B1205B091000E10CF1 /* Farfalla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farfalla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9CC4B4205B091000E10CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC9CC4B6205B091000E10CF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +110,26 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		DC0F577A205CA60C00C3B786 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC0F577E205CA7D100C3B786 /* apple_white.png */,
+				DC0F577D205CA7D100C3B786 /* bee-white.png */,
+				DC0F577B205CA7D100C3B786 /* eye_white.png */,
+				DC0F577C205CA7D100C3B786 /* magnifying_glass.png */,
+				DC0F577F205CA7D100C3B786 /* tuning_fork_white.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC4A5492205D8DE700092F67 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DC4A5493205D8E2A00092F67 /* SearchSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		DC9CC4A8205B091000E10CF1 = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +153,15 @@
 		DC9CC4B3205B091000E10CF1 /* Farfalla */ = {
 			isa = PBXGroup;
 			children = (
+				DC4A5492205D8DE700092F67 /* Settings */,
+				DC0F577A205CA60C00C3B786 /* Resources */,
 				DC0F5777205C4C6E00C3B786 /* Utility */,
 				DC9CC4E3205B0E6A00E10CF1 /* Model */,
 				DC9CC4E2205B092700E10CF1 /* Services */,
 				DC9CC4B4205B091000E10CF1 /* AppDelegate.swift */,
+				DC4A54A0205D9D9000092F67 /* MediaTypeViewController.swift */,
+				DC4A549C205D99A600092F67 /* SearchResultsCell.swift */,
+				DC4A549E205D9BEB00092F67 /* SearchResultsCell.xib */,
 				DC9CC4B6205B091000E10CF1 /* ViewController.swift */,
 				DC9CC4B8205B091000E10CF1 /* Main.storyboard */,
 				DC9CC4BB205B091000E10CF1 /* Assets.xcassets */,
@@ -272,8 +315,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC9CC4BF205B091000E10CF1 /* LaunchScreen.storyboard in Resources */,
+				DC4A549F205D9BEB00092F67 /* SearchResultsCell.xib in Resources */,
+				DC0F5781205CA7D100C3B786 /* magnifying_glass.png in Resources */,
+				DC0F5782205CA7D100C3B786 /* bee-white.png in Resources */,
 				DC9CC4BC205B091000E10CF1 /* Assets.xcassets in Resources */,
 				DC9CC4BA205B091000E10CF1 /* Main.storyboard in Resources */,
+				DC0F5783205CA7D100C3B786 /* apple_white.png in Resources */,
+				DC0F5784205CA7D100C3B786 /* tuning_fork_white.png in Resources */,
+				DC0F5780205CA7D100C3B786 /* eye_white.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +347,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4A549D205D99A600092F67 /* SearchResultsCell.swift in Sources */,
 				DC0F5774205B39AC00C3B786 /* AppleSearch.swift in Sources */,
 				DC9CC4B7205B091000E10CF1 /* ViewController.swift in Sources */,
+				DC4A54A1205D9D9100092F67 /* MediaTypeViewController.swift in Sources */,
+				DC4A5494205D8E2A00092F67 /* SearchSettings.swift in Sources */,
 				DC9CC4E7205B0F5F00E10CF1 /* ResultItem.swift in Sources */,
 				DC0F5776205B3F2E00C3B786 /* AppleSearchMediaTypes.swift in Sources */,
 				DC0F5772205B1A1E00C3B786 /* SearchResults.swift in Sources */,

@@ -27,7 +27,7 @@ class FarfallaTests: XCTestCase {
         // Create an expectation for a background download task.
         let expectation = XCTestExpectation(description: "Apple Search")
 
-        let mediaType = AppleSearchMediaTypes.init().mediaTypesSorted[0];
+        let mediaType = AppleSearchMediaTypes.sharedInstance.mediaTypesSorted[0];
         let search = AppleSearch.init(withSearchTerm: "beatles", forMediaType: mediaType)
         search.executeJob(withCompletion: { (results: SearchResults?, error: Error?) in
             XCTAssert( error == nil )

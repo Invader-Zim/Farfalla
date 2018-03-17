@@ -8,12 +8,14 @@
 
 import UIKit
 
-class AppleSearchMediaTypes: NSObject {
+class AppleSearchMediaTypes {
+    static let sharedInstance = AppleSearchMediaTypes()
     
     var mediaTypes: Dictionary<String, String>!
     var mediaTypesSorted: Array<String>!
 
-    override init() {
+    //Prevents the default '()' initializer outside 'sharedInstance'
+    private init() {
         mediaTypes = Dictionary()
         mediaTypes["movie"] = "Movie"
         mediaTypes["podcast"] = "Podcast"
