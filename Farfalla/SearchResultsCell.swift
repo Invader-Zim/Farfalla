@@ -20,11 +20,6 @@ class SearchResultsCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         activityStopped()
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(self.imageCacheChanged),
-            name: .imageCacheChanged,
-            object: nil)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -75,11 +70,19 @@ class SearchResultsCell: UITableViewCell {
     // MARK: Private Helpers
     
     func activityStarted() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.imageCacheChanged),
+            name: .imageCacheChanged,
+            object: nil)
+        
         self.activityIndicator?.startAnimating()
         self.imageViewItem?.alpha = 0.2
     }
     
     func activityStopped() {
+        NotificationCenter.default.removeObserver(self)
+        
         self.activityIndicator?.stopAnimating()
         self.imageViewItem?.alpha = 1.0
     }
