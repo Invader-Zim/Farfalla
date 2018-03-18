@@ -11,6 +11,8 @@ import UIKit
 class SearchResults: NSObject {
     
     var resultItems: Array<ResultItem>?
+    var searchTerms: String?
+    var mediaType: String?
 
     /*
      {
@@ -18,8 +20,11 @@ class SearchResults: NSObject {
         "results": [...]
      }
      */
-     init(fromJson jsonData: Data) {
+    init(fromJson jsonData: Data, forTerms terms: String, forMediaType media:String) {
         do {
+            searchTerms = terms
+            mediaType = media
+            
             let resultDict = try JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions.mutableContainers) as? Dictionary<String, Any>
             
             let results = resultDict!["results"] as! Array< Dictionary<String, Any> >

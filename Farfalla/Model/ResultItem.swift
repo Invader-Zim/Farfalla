@@ -46,7 +46,7 @@ import UIKit
 
 class ResultItem: NSObject {
 
-    private var resultDict: Dictionary<String, Any>?
+    var resultDict: Dictionary<String, Any>?
     
     init(fromDict dict: Dictionary<String, Any>) {
         resultDict = dict

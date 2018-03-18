@@ -12,10 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SearchResultsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultsCell" rowHeight="100" id="d9M-gp-xOx" customClass="SearchResultsCell" customModule="Farfalla" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d9M-gp-xOx" id="Yr8-Cb-b4J">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="103.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bee-white.png" translatesAutoresizingMaskIntoConstraints="NO" id="WUL-el-Byu">
@@ -26,19 +26,22 @@
                             <constraint firstAttribute="width" constant="60" id="kbQ-Zr-8Jc"/>
                         </constraints>
                     </imageView>
-                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9Hm-zd-fPA">
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="9Hm-zd-fPA">
                         <rect key="frame" x="36" y="30" width="20" height="20"/>
                     </activityIndicatorView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sgt. Pepper's Lonely Hearts Club Band" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39Z-CU-G52">
                         <rect key="frame" x="86" y="10" width="274" height="42.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="gC8-Mj-6lb"/>
+                        </constraints>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" white="0.14999999999999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="The Beatles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iZ-ar-4vh">
-                        <rect key="frame" x="86" y="62.5" width="274" height="27.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="The Beatles" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iZ-ar-4vh">
+                        <rect key="frame" x="86" y="60.5" width="274" height="27"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -48,15 +51,15 @@
                     <constraint firstAttribute="trailing" secondItem="39Z-CU-G52" secondAttribute="trailing" constant="15" id="EhJ-nA-Atq"/>
                     <constraint firstItem="9Hm-zd-fPA" firstAttribute="centerY" secondItem="WUL-el-Byu" secondAttribute="centerY" id="Fnd-6Q-qPF"/>
                     <constraint firstItem="WUL-el-Byu" firstAttribute="top" secondItem="Yr8-Cb-b4J" secondAttribute="top" constant="10" id="GrZ-2d-lK1"/>
-                    <constraint firstItem="3iZ-ar-4vh" firstAttribute="top" secondItem="39Z-CU-G52" secondAttribute="bottom" constant="10" id="I9h-f1-Vkj"/>
+                    <constraint firstItem="3iZ-ar-4vh" firstAttribute="top" secondItem="39Z-CU-G52" secondAttribute="bottom" constant="8" id="I9h-f1-Vkj"/>
                     <constraint firstItem="WUL-el-Byu" firstAttribute="leading" secondItem="Yr8-Cb-b4J" secondAttribute="leading" constant="16" id="Iry-6C-rEp"/>
                     <constraint firstItem="39Z-CU-G52" firstAttribute="leading" secondItem="WUL-el-Byu" secondAttribute="trailing" constant="10" id="ems-28-1W7"/>
-                    <constraint firstAttribute="bottom" secondItem="3iZ-ar-4vh" secondAttribute="bottom" constant="9.5" id="f0M-Dw-d21"/>
+                    <constraint firstAttribute="bottom" secondItem="3iZ-ar-4vh" secondAttribute="bottom" constant="16" id="f0M-Dw-d21"/>
                     <constraint firstItem="39Z-CU-G52" firstAttribute="top" secondItem="Yr8-Cb-b4J" secondAttribute="top" constant="10" id="v5S-z9-SSh"/>
                     <constraint firstItem="9Hm-zd-fPA" firstAttribute="centerX" secondItem="WUL-el-Byu" secondAttribute="centerX" id="y4a-tl-RJl"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.64705882349999999" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.59607843137254901" green="0.74509803921568629" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="activityIndicator" destination="9Hm-zd-fPA" id="caz-k5-DaG"/>
                 <outlet property="imageViewItem" destination="WUL-el-Byu" id="zln-Oz-lMa"/>

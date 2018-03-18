@@ -48,7 +48,7 @@ class AppleSearch: NSObject {
                     completion( nil, error )
                 }
                 else {
-                    let results = SearchResults.init(fromJson: data!)
+                    let results = SearchResults.init(fromJson: data!, forTerms: self.term, forMediaType: self.media)
                     completion( results, nil )
                 }
             }

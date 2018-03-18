@@ -26,6 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         searchStopped()
         
+        self.tableView?.register(UINib(nibName:"SearchResultsPlaceholderCell", bundle: nil), forCellReuseIdentifier: "SearchResultsPlaceholderCell")
         self.tableView?.register(UINib(nibName:"SearchResultsCell", bundle: nil), forCellReuseIdentifier: "SearchResultsCell")
         self.tableView?.rowHeight = UITableViewAutomaticDimension;
         self.tableView?.estimatedRowHeight = 75.0;
@@ -44,6 +45,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let mediaType = AppleSearchMediaTypes.sharedInstance.mediaTypes[SearchSettings.sharedInstance.mediaType!]
         buttonMediaType?.setTitle(mediaType, for: UIControlState.normal)
         imageViewSearch?.image = UIImage(named: "magnifying_glass")
+        
+        if ( searchResults?.searchTerms != SearchSettings.sharedInstance.searchText ||
+            searchResults?.mediaType != SearchSettings.sharedInstance.mediaType) {
+            startSearch()
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -55,13 +61,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    // MARK: UITableViewDelegate
+
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        if ( self.searchResults != nil ) {
+            let vc = ResultDetailsTableViewController.init(nibName: "ResultDetailsTableViewController", bundle: nil)
+            vc.resultItem = self.searchResults?.resultItems![indexPath.row]
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        return nil
+    }
 
     // MARK: UITableViewDataSource
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if ( section == 0 && self.searchResults != nil )
-        {
-            return self.searchResults!.resultItems!.count
+        if ( section == 0 ) {
+            if ( self.searchResults != nil ) {
+                return self.searchResults!.resultItems!.count
+            }
+            else {
+                return 1
+            }
         }
         return 0
     }
@@ -72,9 +94,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // (accessory views, editing controls)
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // create a new cell if needed or reuse an old one
+        if ( self.searchResults == nil ) {
+            return self.tableView!.dequeueReusableCell(withIdentifier: "SearchResultsPlaceholderCell")!
+        }
+
         let cell:SearchResultsCell = self.tableView!.dequeueReusableCell(withIdentifier: "SearchResultsCell") as! SearchResultsCell!
         let resultItem = self.searchResults?.resultItems![indexPath.row]
-        cell.lblTitle?.text = resultItem?.collectionName
+        var title = resultItem?.collectionName
+        if ( title == nil ) {
+            title = resultItem?.trackName
+        }
+        if ( title == nil ) {
+            title = ""
+        }
+        cell.lblTitle?.text = title
         cell.lblSubtitle?.text = resultItem?.artistName
         cell.setImageUrl(urlString: resultItem?.artworkUrl60)
         return cell
@@ -86,19 +119,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //Perform search
         if ( textField.text != SearchSettings.sharedInstance.searchText || self.searchResults == nil || ((self.searchResults?.resultItems!.count) != nil) ) {
             SearchSettings.sharedInstance.searchText = textField.text
-            let curSearch = AppleSearch.init(withSearchTerm: textField.text!, forMediaType: SearchSettings.sharedInstance.mediaType!)
-            self.appleSearchActive = curSearch //We may issue another search before this one completes.
-            searchStarted()
-            curSearch.executeJob(withCompletion: { (results, error) in
-                if ( error == nil && results != nil) {
-                    if ( curSearch == self.appleSearchActive ) {
-                        self.searchStopped()
-                        self.searchResults = results
-                        self.appleSearchActive = nil
-                        self.tableView?.reloadData()
-                    }
-                }
-            })
+            startSearch()
         }
     }
     
@@ -121,6 +142,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func searchStopped() {
         self.activityIndicator?.stopAnimating()
         self.imageViewSearch?.alpha = 1.0
+    }
+    
+    func startSearch() {
+        if ( SearchSettings.sharedInstance.searchText == "" ) {
+            self.searchResults = nil
+            self.appleSearchActive = nil
+            self.tableView?.reloadData()
+            return
+        }
+        
+        let curSearch = AppleSearch.init(withSearchTerm: SearchSettings.sharedInstance.searchText!, forMediaType: SearchSettings.sharedInstance.mediaType!)
+        self.appleSearchActive = curSearch //We may issue another search before this one completes.
+        searchStarted()
+        curSearch.executeJob(withCompletion: { (results, error) in
+            if ( error == nil && results != nil) {
+                if ( curSearch == self.appleSearchActive ) {
+                    self.searchStopped()
+                    self.searchResults = results
+                    self.appleSearchActive = nil
+                    self.tableView?.reloadData()
+                }
+            }
+        })
     }
 }
 

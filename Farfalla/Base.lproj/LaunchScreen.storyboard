@@ -75,7 +75,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.039215686274509803" green="0.13725490196078433" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.32941176470588235" green="0.47058823529411764" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ARL-xS-uJc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="AWH-Sk-r6A"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ARL-xS-uJc" secondAttribute="bottom" constant="20" id="Joy-7n-Bih"/>

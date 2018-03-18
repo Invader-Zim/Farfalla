@@ -15,10 +15,14 @@ extension Notification.Name {
 class ImageCache {
     static let sharedInstance = ImageCache()
     private let cache: NSCache<NSString, NSObject>?
+    
+    //We need a concept of image download in progress, otherwise we might kick off multiple requests
+    private let set: NSMutableSet?
 
     //Prevents the default '()' initializer outside 'sharedInstance'
     private init() {
         cache = NSCache<NSString, NSObject>()
+        set = NSMutableSet.init()
     }
     
     func imageFromUrl(url: URL) -> Any? {
@@ -27,11 +31,18 @@ class ImageCache {
         if ( imageCached != nil ) {
             return imageCached
         }
+
+        // We are already in the process of downloading the image.
+        if ( set?.contains(url) )! {
+            return nil
+        }
+        set?.add(url)
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else { return }
             let image = UIImage(data: data)
             DispatchQueue.main.async() {
+                self.set?.remove(url)
                 self.cache?.setObject(image!, forKey: url.absoluteString as NSString)
                 NotificationCenter.default.post(name: .imageCacheChanged, object: nil, userInfo: ["urlString" : url.absoluteString as NSString])
             }

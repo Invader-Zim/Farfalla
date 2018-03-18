@@ -35,6 +35,7 @@ class SearchResultsCell: UITableViewCell {
     }
     
     // MARK: Publc Accessor
+    
     func setImageUrl(urlString: String?) {
         urlForImage = urlString
         
@@ -53,7 +54,6 @@ class SearchResultsCell: UITableViewCell {
             imageViewItem?.image = image
             activityStopped()
         }
-
     }
     
     // MARK: Event Notifications
@@ -86,6 +86,4 @@ class SearchResultsCell: UITableViewCell {
         self.activityIndicator?.stopAnimating()
         self.imageViewItem?.alpha = 1.0
     }
-
-
 }
