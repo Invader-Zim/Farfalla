@@ -27,7 +27,7 @@ Media types and result property names are included with singleton wrappers.  The
 Search Results, and each Result Item are wrapped to abstract away the serialized form (JSON), and to provide strong typing.
 
 ### Image Cache
-One an image is downloaded for display, it is cached so the next display of the same image will not require another download.  A standard notification occurs once the image has been downloaded, allowing UI to be refreshed immediately.
+Once an image is downloaded for display, it is cached so the next display of the same image will not require another download.  A standard notification occurs once the image has been downloaded, allowing UI to be refreshed immediately.
 
 ### Accessibility
 All text is displayed using logical fonts.  This allows the user to enable larger fonts through the OS Settings, and have the larger fonts reflected within the app.
