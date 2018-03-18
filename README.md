@@ -5,7 +5,7 @@ https://itunes.apple.com/search?parameterkeyvalue&term=XXXX&media=all
 
 Basic search results information is listed within a table view.  When an item within the results set is selected from the table view, a details view appears with more information about the item.
 
-This project is a sample app, built for Zulilly to demonstrate some of my coding skills.  All aspects of this project were authored by me.  Apple documentation was searched often; and internet search was used extensively to help with Swift syntax.  The only borrowed designed element is the syntax for declaring a Swift singleton (https://krakendev.io/blog/the-right-way-to-write-a-singleton)
+This project is a sample app, built for Zulily to demonstrate some of my coding skills.  All aspects of this project were authored by me.  Apple documentation was searched often; and internet search was used extensively to help with Swift syntax.  The only borrowed designed element is the syntax for declaring a Swift singleton (https://krakendev.io/blog/the-right-way-to-write-a-singleton)
 
 
 
